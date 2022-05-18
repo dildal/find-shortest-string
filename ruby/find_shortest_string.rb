@@ -1,5 +1,12 @@
 def find_shortest_string(arr)
   # type your code in here
+  shortest = ""
+  for str in arr
+    if( shortest == "" || str.length > shortest.length)
+      shortest = str
+    end
+  end
+  str
 end
 
 if __FILE__ == $PROGRAM_NAME
